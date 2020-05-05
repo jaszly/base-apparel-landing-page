@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
-
 * {
   font-family: "Josefin Sans";
 }
 
 .grid-container {
   display: grid;
+  box-sizing: content-box;
   grid-template-columns: 60% 40%;
   grid-gap: 0px;
   background-image: url("images/bg-pattern-desktop.svg");
@@ -18,11 +17,34 @@
 .grid-left {
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  width: 65%;
   margin: 50px 50px 1px 80px;
+  padding-left: 50px;
 }
 
 .grid-right {
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+h1.top {
+  padding-top: 100px;
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 600;
+  line-height: 0.5em;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+p {
+  color: hsl(0, 36%, 70%);
+  line-height: 1.8;
+  font-size: 16px;
 }
