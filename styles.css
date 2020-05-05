@@ -6,12 +6,23 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 60% 40%;
   grid-gap: 0px;
   background-image: url("images/bg-pattern-desktop.svg");
   background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
 }
 
 .grid-left {
-  float: center;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 50px 1px 80px;
+}
+
+.grid-right {
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
