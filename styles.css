@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+* {
+  font-family: "Josefin Sans";
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 0px;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-position: center;
+}
+
+.grid-left {
+  float: center;
+}
